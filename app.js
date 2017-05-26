@@ -2,6 +2,12 @@ var express = require('express');
 var app = express();
 
 app.use(express.static('public'));
+
+app.get('/client.js', function(req, res) {
+  res.sendFile(__dirname + '/client.js');
+})
+
+
 var http = require('http').Server(app);
 http.listen(3000);
 
