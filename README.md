@@ -2,7 +2,8 @@
 
 
 
-just start $ node app
+just start 
+$ node app
 
 
 
